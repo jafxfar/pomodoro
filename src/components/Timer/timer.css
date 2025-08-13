@@ -1,0 +1,50 @@
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.timer-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    margin-top: 2vw;
+}
+
+.add-time-controls {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5vw;
+    margin-top: 0.5vw;
+}
+
+.add-time-controls div {
+    cursor: pointer;
+    font-size: .8em;
+    color: #b8b8b8;
+    background-color: #00000000;
+}
+
+.add-time-controls div:hover {
+    color: #ffffff;
+}
+
+
+@media (max-width: 600px) {
+  .timer-controls,
+  .add-time-controls {
+    justify-content: center;
+    flex-direction: row;
+    gap: 3vw;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .timer {
+    padding: 10vw 0;
+  }
+}
+
